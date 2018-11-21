@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3659,6 +3659,12 @@ manufacturer TDK</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+3V3">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="P+">
@@ -3678,6 +3684,19 @@ manufacturer TDK</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3" prefix="+3V3">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7647,6 +7666,215 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 </deviceset>
 </devicesets>
 </library>
+<library name="SignalCommunications (rev18e)">
+<description>&lt;BR&gt;Wurth Elektronik - EMC Components, Power Magnetics, Signal &amp; Communications&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+
+&lt;HR&gt;
+Eagle Version 6, Library Revision 2018e, 2018-11-12&lt;br&gt;
+
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WE-KI_0805A">
+<description>SMD Wire Wound Ceramic Inductor WE-KI</description>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<smd name="2" x="0.8375" y="0" dx="0.925" dy="1.2" layer="1"/>
+<smd name="1" x="-0.8375" y="0" dx="0.925" dy="1.2" layer="1"/>
+<text x="0.1" y="1" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-0.6" y="-1.3" size="0.3048" layer="27">&gt;VALUE</text>
+<wire x1="-0.15" y1="0.625" x2="0.15" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.15" y1="-0.625" x2="0.15" y2="-0.625" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.5" y="0.8"/>
+<vertex x="1.5" y="0.8"/>
+<vertex x="1.5" y="-0.8"/>
+<vertex x="-1.5" y="-0.8"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="L">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WE-KI_0805A" prefix="L" uservalue="yes">
+<description>&lt;b&gt;SMD Wire Wound Ceramic Inductor
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt; WE-KI series offers you an excellent Q factor and highest possible self resonant frequencies up to 12.5 GHz
+&lt;br&gt;
+&lt;br&gt; Inductance tolerances: 5% (2% on request)
+&lt;br&gt;
+&lt;br&gt; High thermal stability
+&lt;br&gt;
+&lt;br&gt; Operating temperature: –40°C to +125°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Applications
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt; Especially developed for high frequency applications
+&lt;br&gt;
+&lt;br&gt; RF transceiver/communications
+&lt;br&gt;
+&lt;br&gt; Bluetooth
+&lt;br&gt;
+&lt;br&gt; Wireless LAN
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_we-ki%20hc_keramik_smd_induktivitaet.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_we-ki%20hc_keramik_smd_induktivitaet.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-KI"&gt;http://katalog.we-online.de/en/pbs/WE-KI&lt;/a&gt;&lt;p&gt;
+
+
+Updated by  Dan Xu 2014-07-08&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-KI_0805A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="_744760022A">
+<attribute name="WE-NUMBER" value="744760022A/2,2nH" constant="no"/>
+</technology>
+<technology name="_744760027A">
+<attribute name="WE-NUMBER" value="744760027A/2,7nH" constant="no"/>
+</technology>
+<technology name="_744760033A">
+<attribute name="WE-NUMBER" value="744760033A/3,3nH" constant="no"/>
+</technology>
+<technology name="_744760039A">
+<attribute name="WE-NUMBER" value="744760039A/3,9nH" constant="no"/>
+</technology>
+<technology name="_744760047A">
+<attribute name="WE-NUMBER" value="744760047A/4,7nH" constant="no"/>
+</technology>
+<technology name="_744760082A">
+<attribute name="WE-NUMBER" value="744760082A/8,2nH" constant="no"/>
+</technology>
+<technology name="_744760110A">
+<attribute name="WE-NUMBER" value="744760110A/10nH" constant="no"/>
+</technology>
+<technology name="_744760122A">
+<attribute name="WE-NUMBER" value="744760122A/22nH" constant="no"/>
+</technology>
+<technology name="_744760127A">
+<attribute name="WE-NUMBER" value="744760127A/27nH" constant="no"/>
+</technology>
+<technology name="_744760133A">
+<attribute name="WE-NUMBER" value="744760133A/33nH" constant="no"/>
+</technology>
+<technology name="_744760136A">
+<attribute name="WE-NUMBER" value="744760136A/36nH" constant="no"/>
+</technology>
+<technology name="_744760147A">
+<attribute name="WE-NUMBER" value="744760147A/47nH" constant="no"/>
+</technology>
+<technology name="_744760156A">
+<attribute name="WE-NUMBER" value="744760156A/56nH" constant="no"/>
+</technology>
+<technology name="_744760182A">
+<attribute name="WE-NUMBER" value="744760182A/82nH" constant="no"/>
+</technology>
+<technology name="_744760218A">
+<attribute name="WE-NUMBER" value="744760218A/180nH" constant="no"/>
+</technology>
+<technology name="_744760222A">
+<attribute name="WE-NUMBER" value="744760222A/220nH" constant="no"/>
+</technology>
+<technology name="_744760233A">
+<attribute name="WE-NUMBER" value="744760233A/330nH" constant="no"/>
+</technology>
+<technology name="_744760239A">
+<attribute name="WE-NUMBER" value="744760239A/390nH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7661,25 +7889,37 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <part name="D1" library="zetex" deviceset="D" device="SOD323" value="DA2JF8100L"/>
 <part name="T1" library="atb322515" deviceset="ATB3225" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="M0805" value="22"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="M0805" value="22"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="D2" library="NXP_60_26022015" deviceset="BAV99" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="M0805" value="150k"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="M0805" value="4.3k"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="M0805" value="150k"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="M0805" value="4.3k"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="220p"/>
 <part name="VT1" library="we-transistor" deviceset="MOSFET-N" device="-SOT23" value="IRLML6346"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="M0805" value="470"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="M0805" value="470"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X1" device="" value="HV"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X1" device="" value="PUMP"/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X1" device="" value="TEST"/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X1" device="" value="VCC"/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X1" device="" value="GND"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X1" device="" value="HV"/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X1" device="" value="PUMP"/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X1" device="" value="TEST"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X1" device="" value="VCC"/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X1" device="" value="GND"/>
 <part name="IC1" library="analog-devices" deviceset="AD8541" device="RJ"/>
+<part name="LX1" library="SignalCommunications (rev18e)" deviceset="WE-KI_0805A" device="" technology="_744760022A" value="Ferrite bead"/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="100p"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="M0805" value="2.2M"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="0817/22" value="5.1G"/>
+<part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
+<part name="JP7" library="pinhead" deviceset="PINHD-1X1" device="" value="V-OUT"/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X1" device="" value="3V3"/>
+<part name="JP8" library="pinhead" deviceset="PINHD-1X1" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -7689,26 +7929,38 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <instance part="C1" gate="G$1" x="7.62" y="55.88"/>
 <instance part="D1" gate="G$1" x="17.78" y="66.04" rot="R180"/>
 <instance part="T1" gate="1" x="33.02" y="55.88" rot="R90"/>
-<instance part="P+1" gate="VCC" x="53.34" y="93.98"/>
-<instance part="R1" gate="G$1" x="53.34" y="76.2" rot="R90"/>
-<instance part="C2" gate="G$1" x="63.5" y="66.04" rot="R90"/>
-<instance part="C3" gate="G$1" x="58.42" y="43.18" rot="R90"/>
-<instance part="R2" gate="G$1" x="73.66" y="43.18" rot="R180"/>
+<instance part="P+1" gate="VCC" x="53.34" y="129.54"/>
+<instance part="R3" gate="G$1" x="53.34" y="76.2" rot="R90"/>
+<instance part="C3" gate="G$1" x="63.5" y="66.04" rot="R90"/>
+<instance part="C2" gate="G$1" x="58.42" y="43.18" rot="R90"/>
+<instance part="R4" gate="G$1" x="73.66" y="43.18" rot="R180"/>
 <instance part="D2" gate="G$1" x="66.04" y="35.56"/>
 <instance part="GND1" gate="1" x="7.62" y="7.62"/>
-<instance part="R3" gate="G$1" x="83.82" y="35.56" rot="R180"/>
-<instance part="R4" gate="G$1" x="93.98" y="25.4" rot="R270"/>
+<instance part="R5" gate="G$1" x="83.82" y="35.56" rot="R180"/>
+<instance part="R7" gate="G$1" x="93.98" y="25.4" rot="R270"/>
 <instance part="C4" gate="G$1" x="76.2" y="25.4" rot="R180"/>
 <instance part="VT1" gate="T" x="43.18" y="35.56"/>
-<instance part="R5" gate="G$1" x="27.94" y="33.02" rot="R180"/>
-<instance part="R6" gate="G$1" x="20.32" y="25.4" rot="R90"/>
+<instance part="R2" gate="G$1" x="27.94" y="33.02" rot="R180"/>
+<instance part="R1" gate="G$1" x="20.32" y="25.4" rot="R90"/>
 <instance part="GND2" gate="1" x="106.68" y="7.62"/>
-<instance part="JP1" gate="G$1" x="-20.32" y="66.04" rot="R180"/>
-<instance part="JP2" gate="G$1" x="-20.32" y="33.02" rot="R180"/>
-<instance part="JP3" gate="G$1" x="127" y="35.56"/>
-<instance part="JP4" gate="G$1" x="-20.32" y="83.82" rot="R180"/>
-<instance part="JP5" gate="G$1" x="-20.32" y="17.78" rot="R180"/>
+<instance part="JP2" gate="G$1" x="-20.32" y="66.04" rot="R180"/>
+<instance part="JP3" gate="G$1" x="-20.32" y="33.02" rot="R180"/>
+<instance part="JP5" gate="G$1" x="127" y="35.56"/>
+<instance part="JP1" gate="G$1" x="-20.32" y="83.82" rot="R180"/>
+<instance part="JP4" gate="G$1" x="-20.32" y="17.78" rot="R180"/>
 <instance part="IC1" gate="G$1" x="121.92" y="88.9"/>
+<instance part="LX1" gate="G$1" x="124.46" y="106.68" rot="R90"/>
+<instance part="GND3" gate="1" x="124.46" y="63.5"/>
+<instance part="C6" gate="G$1" x="142.24" y="78.74" rot="R180"/>
+<instance part="R9" gate="G$1" x="152.4" y="88.9" rot="R180"/>
+<instance part="C7" gate="G$1" x="162.56" y="78.74" rot="R180"/>
+<instance part="C5" gate="G$1" x="109.22" y="81.28" rot="R180"/>
+<instance part="R8" gate="G$1" x="99.06" y="81.28" rot="R90"/>
+<instance part="R6" gate="G$1" x="88.9" y="91.44"/>
+<instance part="+3V31" gate="G$1" x="124.46" y="129.54"/>
+<instance part="JP7" gate="G$1" x="182.88" y="88.9"/>
+<instance part="JP6" gate="G$1" x="182.88" y="101.6"/>
+<instance part="JP8" gate="G$1" x="182.88" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -7727,9 +7979,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="15.24" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="66.04" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 <junction x="7.62" y="66.04"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="91.44" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7741,7 +7996,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="43.18" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="T1" gate="1" pin="4"/>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <junction x="43.18" y="43.18"/>
 <pinref part="VT1" gate="T" pin="D"/>
@@ -7753,9 +8008,9 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <pinref part="T1" gate="1" pin="1"/>
 <wire x1="35.56" y1="48.26" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="45.72" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
 <junction x="53.34" y="66.04"/>
@@ -7778,44 +8033,68 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="76.2" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
 <junction x="43.18" y="17.78"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="43.18" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="17.78" x2="106.68" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="66.04" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
 <junction x="81.28" y="43.18"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="20.32" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
 <junction x="106.68" y="17.78"/>
 <wire x1="76.2" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 <junction x="76.2" y="17.78"/>
 <junction x="93.98" y="17.78"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="20.32" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
 <junction x="20.32" y="17.78"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="-VS"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="124.46" y1="66.04" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="71.12" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="76.2" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="71.12" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
+<junction x="124.46" y="71.12"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="76.2" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<junction x="142.24" y="71.12"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="76.2" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="71.12" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="78.74" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+<junction x="109.22" y="71.12"/>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="71.12" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
+<junction x="162.56" y="71.12"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="53.34" y1="81.28" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="83.82" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="83.82" x2="53.34" y2="127" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <junction x="53.34" y="83.82"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="K1A2"/>
 <wire x1="66.04" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
@@ -7825,26 +8104,26 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="VT1" gate="T" pin="G"/>
 <wire x1="33.02" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PUMP" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="30.48" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <junction x="20.32" y="33.02"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="K2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
@@ -7854,13 +8133,78 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 </net>
 <net name="TEST" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="30.48" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <junction x="93.98" y="35.56"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="+VS"/>
+<pinref part="LX1" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="93.98" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="96.52" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="96.52" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
+<junction x="124.46" y="96.52"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="129.54" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="88.9" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="81.28" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IN-"/>
+<wire x1="114.3" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<junction x="132.08" y="88.9"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="88.9" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="83.82" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<junction x="162.56" y="88.9"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN+"/>
+<wire x1="116.84" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="86.36" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<junction x="109.22" y="91.44"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
+<junction x="99.06" y="91.44"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="LX1" gate="G$1" pin="2"/>
+<pinref part="+3V31" gate="G$1" pin="+3V3"/>
+<wire x1="124.46" y1="114.3" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="119.38" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="101.6" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<junction x="124.46" y="119.38"/>
 </segment>
 </net>
 </nets>
